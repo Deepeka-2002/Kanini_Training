@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "g7LMbUTqPshvJNGhm41h6LsGmcdgkETGSAL80AhxrHA=",
+  "Source": "SampOnetoManyAPI",
+  "BasePath": "_content/SampOnetoManyAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

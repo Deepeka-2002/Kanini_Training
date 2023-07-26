@@ -1,0 +1,5 @@
+C:\Kanini training\C#\EFDBFirst\EFDBFirst\obj\Debug\net7.0\EFDBFirst.csproj.AssemblyReference.cache
+C:\Kanini training\C#\EFDBFirst\EFDBFirst\obj\Debug\net7.0\EFDBFirst.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kanini training\C#\EFDBFirst\EFDBFirst\obj\Debug\net7.0\EFDBFirst.AssemblyInfoInputs.cache
+C:\Kanini training\C#\EFDBFirst\EFDBFirst\obj\Debug\net7.0\EFDBFirst.AssemblyInfo.cs
+C:\Kanini training\C#\EFDBFirst\EFDBFirst\obj\Debug\net7.0\EFDBFirst.csproj.CoreCompileInputs.cache
