@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order Form</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+            <link rel="stylesheet" href="mob.css">
+            <script src="mob.js"></script>
+        
+    </head>
+    <body>
+       <header>
+        <h3>One-Stop Mobile Accessories</h3>
+        </header>
+        <table>
+            <thead>
+            <tr>
+                <td class="title" colspan="2"><label>Personal Details</label></td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="phoneNumber">Phone Number</label></td>
+                    <td><input type="tel" id="phoneNumber" name="phoneNumber" pattern="[7-9]{1}[0-9]{9}" required></td>
+            </tr>
+    
+            <tr>
+            
+                    <td><label for="emailid">Email</label></td>
+                    <td><input type="email" id="emailid" name="emailid" required></td>
+            </tr>
+            <tr>
+            
+                    <td><label for="address">Delivery Address</label></td>
+                    <td><textarea id="address" name="address" rows="4" cols="50" required></textarea></td>
+            </tr>
+
+            <tr>
+            <td style="text-align: center" colspan="2"><label>Combo Offers(Save upto Rs.400 on each combo!!)</label></td>
+            </tr>
+
+                <tr>
+                    <td rowspan="6">
+                    <input type="checkbox" id="option1" name="option1"
+                     value="SanDisk 32GB micro SDHC Memory Card + iXCC Micro USB cable">
+                     <label>SanDisk 32GB micro SDHC Memory Card + iXCC Micro-USB
+                        cable</label><br /><br />
+                    
+                   
+                    <input type="checkbox" id="option2" name="option2"
+                     value="Sandisk Cruzer Blade 32 GB Pen Drive + Samsung Type B 15W Travel Adaptor">
+                     <label>Sandisk Cruzer Blade 32 GB Pen Drive + Samsung Type B 15W
+                        Travel Adaptor</label><br /><br />
+                
+                    <input type="checkbox" id="option3" name="option3"
+                    value ="Sony WF-1000XM3 Head Phone + SanDisk 16GB micro SDHC Memory Card">
+                    <label>Sony WF-1000XM3 Head Phone + SanDisk 16GB micro SDHC Memory
+                        Card</label><br /><br />
+                    
+                    <input type="checkbox" id="option4" name="option4" value=" Mpow Car Phone Mount + Zebroni 1 Amp Turbo Car Mobile Charger">
+                    <label>Mpow Car Phone Mount + Zebroni 1 Amp Turbo Car Mobile
+                        Charger</label><br /><br />
+
+                     <input type="checkbox" id="option5" name="option5"
+                    value="Tribit XSound Go Bluetooth Speaker + Mpow car Phone Mount">
+                    <label>Tribit XSound Go Bluetooth Speaker + Mpow Car Phone
+                        Mount</label>
+                    </td>
+
+                    <tr>
+                        <td><label>Rs 799/- only</label></td>
+                      </tr>
+                      <tr>
+                        <td><label>Rs 899/- only</label></td>
+                      </tr>
+                      <tr>
+                        <td><label>Rs 1199/- only</label></td>
+                      </tr>
+                      <tr>
+                        <td><label>Rs 299/- only</label></td>
+                      </tr>
+                      <tr>
+                        <td><label>Rs 999/- only</label></td>
+                      </tr>
+                    
+                </tr>
+            
+                <tr><td colspan="2" style="text-align: center"><label>*Enjoy 20% discount on purchasing combos worth 2000 and above!!</label></td></tr>
+            </tbody>
+            </table>  
+
+            <button type="submit" id="order">PLACE ORDER</button>
+            <div id="result"></div>
+            
+    </body>
+</html>

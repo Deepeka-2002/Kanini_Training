@@ -1,0 +1,53 @@
+*{
+    margin-inline-start: 10px;
+    padding :3px;
+}
+header{
+    background-color: rgb(249, 193, 119);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+
+}
+.org_name{
+    padding-right: 10%;
+}
+
+#inp_search{
+    width: 270px;
+    border-radius: 5px;
+    height: 35px;
+
+}
+.search{
+
+    padding-left: 20%;
+}
+.navmenu li{
+    display: inline;
+    padding-right: 20%;
+    font-size: x-large;
+    background-color: rgb(59, 122, 89);
+    color:aqua;
+}
+.navmenu li a{
+    text-decoration: none;
+    color:bisque;
+}
+.eve{
+    padding-right: 5%;
+}
+.latestupdate{
+    display: inline-flex;
+}
+ .btnn 
+{
+    padding: 11px;
+    background: #FF4D59;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+
+}
