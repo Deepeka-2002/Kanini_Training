@@ -1,14 +1,23 @@
-<a [routerLink]="['/']">
-  <strong> Routing Example </strong></a>
-<br> <br><br>
+<div class="container">
 
-<router-outlet></router-outlet>
+  <button type="button" (click)="getProductsfromService()">Get Products</button>
 
-<br><br>
-
-<div>
-  <a [routerLink]="['home']">Home</a>     <br>
-  <a [routerLink]="['product']">Product</a>  <br>
-  <a [routerLink]="['contact']">Contact us</a>  <br>
+  <div class='table-responsive'>
+    <table class='table'>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products;">
+          <td>{{product.productID}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.price}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-
