@@ -1,0 +1,21 @@
+<p>allstudents works!</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+            <th scope="col">Pin</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{student.studId}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.city}}</td>
+            <td>{{student.pin}}</td>
+        </tr>
+
+    </tbody>
+</table>
