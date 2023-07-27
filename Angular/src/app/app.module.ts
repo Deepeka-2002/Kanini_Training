@@ -1,27 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Button} from 'bootstrap';
-import { FormsModule} from '@angular/forms';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component';
-import { ServersComponent } from './servers/servers.component';
-import { PipesComponent } from './pipes/pipes.component';
-import { NamefilterPipe } from './namefilter.pipe';
-import { WordcountPipe } from './wordcount.pipe';
+import { EmployeeComponentComponent } from './employee-component/employee-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent,
-    ServersComponent,
-    PipesComponent,
-    NamefilterPipe,
-    WordcountPipe
+    EmployeeComponentComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
