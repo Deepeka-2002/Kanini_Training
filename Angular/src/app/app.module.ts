@@ -1,23 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Button} from 'bootstrap';
 import { FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
-//import { DropdownComponent }from 'src/app/dropdown/dropdown.component';
-
+import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { NamefilterPipe } from './namefilter.pipe';
+import { WordcountPipe } from './wordcount.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
-   
+    ServerComponent,
+    ServersComponent,
+    PipesComponent,
+    NamefilterPipe,
+    WordcountPipe
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent,NavComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

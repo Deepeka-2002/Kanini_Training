@@ -1,0 +1,88 @@
+<label>Server name</label><br>
+
+<!--<input type = "text" (input) = "onServernameType($event)"><br>-->
+
+<input type ="text" class="form-control"  [(ngModel)] = "serverName"> <br>
+
+<p> {{serverName}}</p>
+
+<label>Server count: </label>
+<input type ='text' [(ngModel)] = "num"/><br>
+<div [ngSwitch] ="num">Server Count
+<div *ngSwitchCase="'1'">One</div>
+<div *ngSwitchCase="'2'">Two</div>
+<div *ngSwitchCase="'3'">Three</div>
+<div *ngSwitchCase="'4'">Four</div>
+<div *ngSwitchCase="'5'">Five</div>
+<div *ngSwitchDefault>Enter 1 to 5</div>
+</div>
+
+<select id="serverSelected"
+[(ngModel)] = "serverSelected">
+<option *ngFor="let server of serversList;">{{server}}</option>
+</select>
+
+<div [ngSwitch]='serverSelected'>
+    <p *ngSwitchCase ="'SQL'">Server one</p>
+    <p *ngSwitchCase ="'ORACLE'">Server two</p>
+    <p *ngSwitchCase ="'MSACCESS'">Server three</p>
+    <p *ngSwitchCase ="'ORACLE'">Server two again</p>
+    <p *ngSwitchDefault>This is Default</p>
+</div>
+
+<div [ngSwitch]='serverSelected'>
+    <ng-template [ngSwitchCase] ="'SQL'">Server one</ng-template>
+    <ng-template [ngSwitchCase] ="'ORACLE'">Server two</ng-template>
+    <ng-template [ngSwitchCase]="'MSACCESS'">Server three</ng-template>
+    <ng-template [ngSwitchCase] ="'ORACLE'">Server two again</ng-template>
+    <ng-template ngSwitchDefault>This is Default</ng-template>
+</div>
+
+<button class = "btn btn-primary" [disabled] = "!serverCreateOption" (click)="onServerAdd()">Add server</button>
+
+<p> Prop Value : {{serverCreateOption}}</p>
+
+<p *ngIf="serverCreated == 'Created'; else beforeServer">
+    Server Creation Status : {{serverCreated}}
+</p>
+
+
+<ng-template #beforeServer>
+    Server Creation Status : {{serverCreated}}
+</ng-template>
+
+
+<p> {{serverStatus}}</p>
+
+
+<app-server *ngFor = "let server of serversList">
+    
+</app-server>
+
+<ng-container [ngSwitch]="serverSelected"> 
+    <ng-container *ngSwitchCase="'SQL'"> 
+        <ng-container *ngTemplateOutlet="sharedTemplate12">
+
+        </ng-container>
+     </ng-container> 
+     <ng-container *ngSwitchCase="'MSACCESS'"> 
+        <ng-container *ngTemplateOutlet="sharedTemplate12">
+
+        </ng-container> 
+    </ng-container> 
+    <ng-container *ngSwitchCase="'ORACLE'"> 
+        <ng-container *ngTemplateOutlet="sharedTemplate34">
+
+        </ng-container>
+     </ng-container> 
+     <ng-container *ngSwitchCase="''"> 
+        <ng-container *ngTemplateOutlet="sharedTemplate34">
+
+        </ng-container> 
+    </ng-container>
+     <ng-template #sharedTemplate12>Shared between 1,2</ng-template> 
+     <ng-template #sharedTemplate34>Shared between 3,4</ng-template> 
+     <ng-container *ngSwitchDefault>Default Template
+
+     </ng-container>
+</ng-container>

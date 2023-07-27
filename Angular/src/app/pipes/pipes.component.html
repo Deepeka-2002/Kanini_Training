@@ -1,0 +1,49 @@
+
+   <hr><hr>
+    <p ngNonBindable>
+        {{'Hello' | uppercase}}
+    </p>
+    {{'Hello' | uppercase}}<hr>
+
+    <p ngNonBindable>
+        {{'HELLO' | lowercase}}
+    </p>
+    {{'HELLO' | lowercase}}
+    {{'HELLO' | titlecase}}<hr>
+
+
+{{dateobj | date: 'medium'}}<br>
+{{dateobj | date: 'fullDate'}}<br>
+{{dateobj | date: 'fullTime'}}<br>
+{{dateobj | date: 'yyyy-MM-dd HH:mm  zzzz'}}<br>
+
+<hr>
+
+{{123455.789 | currency}}<br>
+{{123455.789 | currency :'INR'}}<br>
+{{123455.789 | currency : 'CAD'}}<br>
+{{123455.789 | currency :'CAD'}}<br>
+{{123455.789 | currency : 'AUD'}}<br>
+{{123455.4 | currency : 'AUD' : 'symbol' : '1.3'}}
+
+<p>{{0.6188 | percent}}</p>
+
+{{ numbersarray | slice: 2 : -1}}<br>
+
+{{ namesarray | slice: 0 : 2}}<br>
+
+{{str | slice: 0 :3}}<hr>
+
+{{course | json }}<hr>
+
+{{ 'happy' | i18nSelect : emoji}}<br>
+
+{{dateobj | date: 'fullDate'| uppercase}}<br>
+
+<hr>
+
+<input type ="text" #inp>
+<ul class ="list-group">
+    <li class="list-group-item"
+    *ngFor = "let n of namesarray | namefilter : inp.value">{{n}}</li>
+</ul>
